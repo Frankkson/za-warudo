@@ -9,6 +9,7 @@ const BlogPosts = ({ post }) => {
 				alt="Imagem de capa do Post"
 			/>
 			<h2 className={styles.titulo}>{post.titulo}</h2>
+			<button className={styles.botaoLer}>Ler</button>
 		</div>
 	);
 };
