@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from "./Componentes/Menu";
 import Rodape from "./Componentes/Rodape";
 import PaginaPadrao from "Componentes/PaginaPadrao";
+import Post from "Paginas/Post";
 
 function AppRoutes() {
 	return (
@@ -19,8 +20,12 @@ function AppRoutes() {
 						element={<Inicio />}
 					></Route>
 					<Route
-						path="/Sobre-Mim"
+						path="sobre-mim"
 						element={<SobreMim />}
+					></Route>
+					<Route
+						path="posts/:id"
+						element={<Post />}
 					></Route>
 				</Route>
 				<Route
