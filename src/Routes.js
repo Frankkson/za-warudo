@@ -5,6 +5,7 @@ import Menu from "./Componentes/Menu";
 import Rodape from "./Componentes/Rodape";
 import PaginaPadrao from "Componentes/PaginaPadrao";
 import Post from "Paginas/Post";
+import NaoEncontrado from "Paginas/NaoEncontrado";
 
 function AppRoutes() {
 	return (
@@ -30,7 +31,7 @@ function AppRoutes() {
 				</Route>
 				<Route
 					path="*"
-					element={<div>Deu ruim, champs</div>}
+					element={<NaoEncontrado />}
 				></Route>
 			</Routes>
 			<Rodape />
